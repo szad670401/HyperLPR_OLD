@@ -26,7 +26,7 @@ using namespace easypr;
 class CN_PLATE_recognizer : public recognizer{
 
 private:
-    const int INPUT_SIZE = 25;
+    const int INPUT_SIZE = 22;
 
 public:
     CN_PLATE_recognizer(string filename_model):recognizer(filename_model){
@@ -112,7 +112,7 @@ public:
             auto val = -1;
             vector<pair<double, int> > result_scores_test;
             if(i==0){
-                char_ = extendImage(char_);
+                //char_ = extendImage(char_);
                 bitwise_not(char_,char_);
                 recognizer::recongize(char_,result_scores_test,Province,range,10);}
             if(i==1){

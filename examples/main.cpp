@@ -12,8 +12,8 @@ void test_plate_located() {
     Directory_mac dir;
    // LPR::CONFIG::Config config("/Users/yujinke/Desktop/platejudge.data","/Users/yujinke/Desktop/LeNet-weights");
     HyperLPR lpr;
-   // vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/extreme_test/大角度", "*.jpg");
-    vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/general_test", "*.JPG");
+    vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/extreme_test/大角度", "*.jpg");
+   // vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/general_test", "*.JPG");
     //vector<string> filename = dir.GetListFiles("/Users/yujinke/ClionProjects/Quick_LPR/home/", "*.JPG");
 
     for (int i = 0; i < filename.size(); i++) {

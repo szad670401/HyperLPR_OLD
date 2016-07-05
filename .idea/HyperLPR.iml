@@ -23,9 +23,12 @@
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/average_pooling_layer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/feedforward_layer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/lrn_layer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/activations/activation_function.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/node.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/network.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/node.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/cifar10_parser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/mnist_parser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/display.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/activations/activation_function.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/target_cost.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/product.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/aligned_allocator.h" isTestSource="false" />
@@ -33,9 +36,6 @@
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/util.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/weight_init.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/deform.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/cifar10_parser.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/mnist_parser.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/display.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/config.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/lossfunctions/loss_function.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/nodes.h" isTestSource="false" />
@@ -46,13 +46,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/util/config.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/util/operate.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/judger/judger.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/io/linux_dir.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/recognizer/segment/chars_segment.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/recognizer/segment/core_func.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/recognizer/segment/core_func.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/recognizer/segment/chars_segment.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/recognizer/chinese/CN_PLATE.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/recognizer/recongizer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/io/linux_dir.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
@@ -429,9 +429,12 @@
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/average_pooling_layer.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/feedforward_layer.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/lrn_layer.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/activations/activation_function.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/node.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/network.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/node.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/cifar10_parser.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/mnist_parser.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/display.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/activations/activation_function.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/target_cost.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/product.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/aligned_allocator.h" />
@@ -439,9 +442,6 @@
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/util.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/weight_init.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/deform.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/cifar10_parser.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/mnist_parser.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/display.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/config.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/lossfunctions/loss_function.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/nodes.h" />
@@ -452,13 +452,13 @@
           <root url="file://$MODULE_DIR$/Hyperlpr/util/config.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/util/operate.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/judger/judger.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/io/linux_dir.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/recognizer/segment/chars_segment.cpp" />
           <root url="file://$MODULE_DIR$/Hyperlpr/recognizer/segment/core_func.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/recognizer/segment/core_func.cpp" />
           <root url="file://$MODULE_DIR$/Hyperlpr/recognizer/segment/chars_segment.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/recognizer/chinese/CN_PLATE.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/recognizer/recongizer.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/io/linux_dir.h" />
         </excluded>
       </library>
     </orderEntry>

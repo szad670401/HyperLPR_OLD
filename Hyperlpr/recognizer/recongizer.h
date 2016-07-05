@@ -71,12 +71,13 @@ private:
         // connection table [Y.Lecun, 1998 Table.1]
 #define ReLu relu
         // construct nets
+
         nn << convolutional_layer<ReLu>(20, 20, 3 , 1, 20) // 32x32 in, 5x5 kernel, 1-6 fmaps conv
         << max_pooling_layer<ReLu>(18,18, 20, 2)
-        <<convolutional_layer<ReLu>(9,9, 2 , 20, 10)
-        <<fully_connected_layer<ReLu>(8*8*10, 200)
-        <<fully_connected_layer<softmax>(200, 65);
-
+        <<convolutional_layer<ReLu>(9,9, 2 , 20, 15)
+        <<fully_connected_layer<ReLu>(8*8*15,100)
+        <<fully_connected_layer<ReLu>(100, 100)
+        <<fully_connected_layer<softmax>(100, 65);
 
     }
 
