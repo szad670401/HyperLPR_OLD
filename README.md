@@ -19,5 +19,11 @@
 
 ###测试使用方法:
 将Hyperlpr目录移动至所需的项目目录，并且包含"hyperlpr.h"头文件即可。
+
+###大角度样张测试:
+![5](./temp/images/CBDDC37A-CF30-49A8-857B-A4BC787D4780.png)
+![5](./temp/images/4540013D-1A11-4DBD-BA59-66B484117591.png)
+![5](./temp/images/07A2B0BD-647F-4FB5-A924-01667A2BAFCA.png)
+![5](./temp/images/DF207BEA-3226-4BEE-8FF1-E9F6D38DD683.png)
 ###Anthor:
 + Jack Yu

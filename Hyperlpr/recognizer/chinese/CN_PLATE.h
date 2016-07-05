@@ -110,22 +110,42 @@ public:
 
             Mat char_= matChars[i];
             auto val = -1;
-            vector<pair<double, int> > result_scores_test;
+//            vector<pair<double, int> > result_scores_test;
+//            if(i==0){
+//                //char_ = extendImage(char_);
+//                //bitwise_not(char_,char_);
+//                recognizer::recongize(char_,result_scores_test,Province,range,10);}
+//            if(i==1){
+//                //char_ = extendImage(char_);
+//                bitwise_not(char_,char_);
+//                recognizer::recongize(char_,result_scores_test,alphabet,range,10);}
+//            if(i>1)
+//            {   //char_ = extendImage(char_);
+//                bitwise_not(char_,char_);
+//                recognizer::recongize(char_,result_scores_test,chNum,range,10);}
+//            if(result_scores_test.size()>0)
+//                oss<<recognizer::findmax(result_scores_test);
+
+
+            vector<double > scores;
             if(i==0){
                 //char_ = extendImage(char_);
                 bitwise_not(char_,char_);
-                recognizer::recongize(char_,result_scores_test,Province,range,10);}
+                recognizer::recongize(char_,scores);
+                oss<<recognizer::findmax(scores,0,31);
+            }
             if(i==1){
-                char_ = extendImage(char_);
+                //char_ = extendImage(char_);
                 bitwise_not(char_,char_);
-                recognizer::recongize(char_,result_scores_test,alphabet,range,10);}
+                recognizer::recongize(char_,scores);
+                oss<<recognizer::findmax(scores,41,65);
+            }
             if(i>1)
-            {   char_ = extendImage(char_);
+            {   //char_ = extendImage(char_);
                 bitwise_not(char_,char_);
-                recognizer::recongize(char_,result_scores_test,chNum,range,10);}
-            if(result_scores_test.size()>0)
-                oss<<recognizer::findmax(result_scores_test);
-
+                recognizer::recongize(char_,scores);
+                oss<<recognizer::findmax(scores,31,65);
+            }
 
 #ifdef DEBUG
 

@@ -74,9 +74,9 @@ private:
 
         nn << convolutional_layer<ReLu>(20, 20, 3 , 1, 20) // 32x32 in, 5x5 kernel, 1-6 fmaps conv
         << max_pooling_layer<ReLu>(18,18, 20, 2)
-        <<convolutional_layer<ReLu>(9,9, 2 , 20, 15)
-        <<fully_connected_layer<ReLu>(8*8*15,100)
-        <<fully_connected_layer<ReLu>(100, 100)
+        <<convolutional_layer<ReLu>(9,9, 2 , 20, 10)
+        <<fully_connected_layer<ReLu>(8*8*10,256)
+        <<fully_connected_layer<ReLu>(256, 100)
         <<fully_connected_layer<softmax>(100, 65);
 
     }
@@ -93,6 +93,9 @@ public:
 
         // load nets
         ifstream ifs(filename_model.c_str());
+        if(ifs.good())
+            cout<<"opened"<<endl;
+
         ifs >> nn;
 
     }
@@ -123,6 +126,22 @@ public:
         sort(vec.begin(), vec.end(), greater<pair<double, int>>());
         return chars[vec[0].second];
 
+
+    }
+
+    string findmax(vector<double> vec,int lo = 0,int hi = 65){
+        double f = 0;
+        int idx = -1;
+
+        for(int i = lo ; i < hi;i++)
+        {
+          if(vec[i] > f) {
+              f = vec[i];
+                idx = i;
+
+          }
+        }
+        return chars[idx];
 
     }
 
@@ -178,7 +197,7 @@ public:
     void recongize(cv::Mat img,vector<double>  &results){
 
         vec_t data;
-        convert_image(img,0, 1, 20, CHAR_SIZE, data);
+        convert_image(img,-1, 1, 20, CHAR_SIZE, data);
         auto res = nn.predict(data);
         vector<pair<double, int> > scores;
         auto _size = 65;
@@ -248,6 +267,13 @@ public:
 #endif
 
     }
+
+    string simple_test(Mat img){
+        vector<double> res;
+        recongize(img,res);
+        return findmax(res);
+    }
+
 
 };
 
