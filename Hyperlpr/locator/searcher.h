@@ -136,6 +136,7 @@ namespace LPR {
 
         }
 
+        //this function copyed from EasyPR
 
         Mat findPlateByColor(Mat RGB, int color, Mat &output_thres) {
             //code copyed from Project Easy_PR

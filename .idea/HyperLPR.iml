@@ -4,8 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/examples/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/plate/plate.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/tiny_cnn.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/optimizers/optimizer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/tiny_cnn.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/linear_layer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/dropout_layer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/max_pooling_layer.h" isTestSource="false" />
@@ -23,12 +23,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/average_pooling_layer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/feedforward_layer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/lrn_layer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/network.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/node.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/cifar10_parser.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/mnist_parser.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/display.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/activations/activation_function.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/node.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/network.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/target_cost.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/product.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/aligned_allocator.h" isTestSource="false" />
@@ -36,6 +33,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/util.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/weight_init.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/deform.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/cifar10_parser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/mnist_parser.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/display.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/config.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/lossfunctions/loss_function.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/nodes.h" isTestSource="false" />
@@ -410,8 +410,8 @@
         </SOURCES>
         <excluded>
           <root url="file://$MODULE_DIR$/Hyperlpr/plate/plate.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/tiny_cnn.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/optimizers/optimizer.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/tiny_cnn.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/linear_layer.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/dropout_layer.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/max_pooling_layer.h" />
@@ -429,12 +429,9 @@
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/average_pooling_layer.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/feedforward_layer.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/layers/lrn_layer.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/network.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/node.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/cifar10_parser.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/mnist_parser.h" />
-          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/display.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/activations/activation_function.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/node.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/network.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/target_cost.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/product.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/aligned_allocator.h" />
@@ -442,6 +439,9 @@
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/util.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/weight_init.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/util/deform.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/cifar10_parser.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/mnist_parser.h" />
+          <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/io/display.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/config.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/lossfunctions/loss_function.h" />
           <root url="file://$MODULE_DIR$/Hyperlpr/tiny_cnn/nodes.h" />

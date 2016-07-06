@@ -139,7 +139,7 @@ public:
 
         vec_t data;
 
-        convert_image(img,0, 1, 46, 12, data);
+        convert_image(img,-1, 1, 46, 12, data);
         auto res = nn.predict(data);
         vector<pair<double, int> > scores;
         auto _size = 2;
