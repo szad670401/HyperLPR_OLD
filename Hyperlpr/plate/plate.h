@@ -150,8 +150,10 @@ namespace LPR {
         waitKey(0);
 #endif
 
-        which->judge(prepared);
-        isPlate = 1;
+        if(which->judge(prepared)) {
+            isPlate = 1;
+        }
+
     }
 
 

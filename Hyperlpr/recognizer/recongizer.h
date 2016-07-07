@@ -24,7 +24,8 @@ using namespace std;
 class recognizer{
 
 private:
-    vector<string> chars{"京","沪","津","渝","冀","晋","蒙","辽","吉","黑","苏","浙","皖","闽","赣","鲁","豫","鄂","湘","粤","桂","琼","川","贵","云","藏","陕","甘","青","宁","新","0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","J","K","L","M","N","P","Q","R","S","T","U","V","W","X","Y","Z"};
+    //vector<string> chars{"京","沪","津","渝","冀","晋","蒙","辽","吉","黑","苏","浙","皖","闽","赣","鲁","豫","鄂","湘","粤","桂","琼","川","贵","云","藏","陕","甘","青","宁","新","0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","J","K","L","M","N","P","Q","R","S","T","U","V","W","X","Y","Z"};
+    vector<string> chars{"jing ","hu","jin ","yu ","ji ","jin ","meng ","liao ","ji ","hei ","su ","zhe ","wan ","min ","gan ","lu ","yu ","e","xiang ","yue","guì ","qiong ","chuan ","gui ","yun ","cang ","shan ","gan ","qing ","ning ","xin ","0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","J","K","L","M","N","P","Q","R","S","T","U","V","W","X","Y","Z"};
 
     network<sequential> nn;
     template <typename Activation>
@@ -78,6 +79,12 @@ private:
         <<fully_connected_layer<ReLu>(8*8*10,256)
         <<fully_connected_layer<ReLu>(256, 100)
         <<fully_connected_layer<softmax>(100, 65);
+//        nn << convolutional_layer<ReLu>(20, 20, 3 , 1, 20) // 32x32 in, 5x5 kernel, 1-6 fmaps conv
+//        << max_pooling_layer<ReLu>(18,18, 20, 2)
+//        <<convolutional_layer<ReLu>(9,9, 2 , 20, 10)
+//        <<fully_connected_layer<ReLu>(8*8*10,256)
+//        <<fully_connected_layer<ReLu>(256, 256)
+//        <<fully_connected_layer<softmax>(256, 65);
 
     }
 
@@ -133,8 +140,11 @@ public:
         double f = 0;
         int idx = -1;
 
+
         for(int i = lo ; i < hi;i++)
         {
+            cout<<"["<<i<<"] "<<vec[i]<<endl;
+
           if(vec[i] > f) {
               f = vec[i];
                 idx = i;
@@ -204,6 +214,7 @@ public:
 
         for (int i = 0; i < 65; i++) {
             float conf_val = rescale<softmax>(res[i]);
+
             results.emplace_back(conf_val/120);
         }
 

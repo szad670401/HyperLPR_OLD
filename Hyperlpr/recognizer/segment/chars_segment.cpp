@@ -217,7 +217,7 @@ namespace easypr {
                  int h = input_grey.rows;
                  Mat tmp = input_grey(Rect_<double>(w * 0.1, h * 0.1, w * 0.8, h * 0.8));
                  int threadHoldV = ThresholdOtsu(tmp);*/
-
+                newRoi= auxRoi;
                 threshold(auxRoi, newRoi, 5, 255, CV_THRESH_BINARY + CV_THRESH_OTSU);
             } else if (YELLOW == plateType) {
                 threshold(auxRoi, newRoi, 5, 255, CV_THRESH_BINARY_INV + CV_THRESH_OTSU);

@@ -129,19 +129,19 @@ public:
 
             vector<double > scores;
             if(i==0){
-                //char_ = extendImage(char_);
+                char_ = extendImage(char_);
                 bitwise_not(char_,char_);
                 recognizer::recongize(char_,scores);
                 oss<<recognizer::findmax(scores,0,31);
             }
             if(i==1){
-                //char_ = extendImage(char_);
+                char_ = extendImage(char_);
                 bitwise_not(char_,char_);
                 recognizer::recongize(char_,scores);
                 oss<<recognizer::findmax(scores,41,65);
             }
             if(i>1)
-            {   //char_ = extendImage(char_);
+            {   char_ = extendImage(char_);
                 bitwise_not(char_,char_);
                 recognizer::recongize(char_,scores);
                 oss<<recognizer::findmax(scores,31,65);

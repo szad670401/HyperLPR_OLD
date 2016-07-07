@@ -25,11 +25,6 @@ void test_plate_located() {
             {
                 cout<<str[i]<<endl;
             }
-           imshow("img",img);
-            waitKey(0);
-
-
-
 
 
         }

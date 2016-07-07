@@ -31,53 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hyperlpr.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hyperlpr/hyperlpr.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="78" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="78" />
-              <folding>
-                <element signature="e#125#149#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="15" />
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searcher.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Hyperlpr/locator/searcher.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41358024">
-              <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hyperlpr/locator/locator.h">
+      <file leaf-file-name="config.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hyperlpr/util/config.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="judger.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hyperlpr/judger/judger.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="168" column="42" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,34 +55,31 @@
         <entry file="file://$PROJECT_DIR$/Hyperlpr/plate/plate.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="152" column="18" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
+              <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
                 <element signature="e#2164#2220#0" expanded="true" />
                 <element signature="e#2394#2442#0" expanded="true" />
-                <marker date="1466989732000" expanded="true" signature="11186:11234" placeholder="..." />
+                <marker date="1467906453000" expanded="true" signature="11206:11254" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CN_PLATE.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/chinese/CN_PLATE.h">
+      <file leaf-file-name="composer.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hyperlpr/composer.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="134" column="52" selection-start-line="134" selection-start-column="52" selection-end-line="134" selection-end-column="52" />
-              <folding>
-                <element signature="e#157#176#0" expanded="true" />
-                <element signature="e#1833#1884#0" expanded="true" />
-              </folding>
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="operate.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hyperlpr/util/operate.h">
+      <file leaf-file-name="retinex.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hyperlpr/enhancement/retinex/retinex.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="21" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,21 +89,66 @@
         <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/recongizer.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <element signature="e#130#149#0" expanded="true" />
-                <element signature="e#6547#6980#0" expanded="true" />
+                <element signature="e#1101#1122#0" expanded="true" />
+                <element signature="e#1333#1345#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core_func.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/segment/core_func.cpp">
+      <file leaf-file-name="hyperlpr.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hyperlpr/hyperlpr.h">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="56" column="142" selection-start-line="56" selection-start-column="142" selection-end-line="56" selection-end-column="142" />
+              <folding>
+                <element signature="e#125#149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searcher.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hyperlpr/locator/searcher.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="348" column="46" selection-start-line="348" selection-start-column="46" selection-end-line="348" selection-end-column="46" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chars_segment.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/segment/chars_segment.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="operate.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Hyperlpr/util/operate.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.66049385">
+              <caret line="226" column="49" selection-start-line="226" selection-start-column="49" selection-end-line="226" selection-end-column="49" />
+              <folding>
+                <element signature="e#121#150#0" expanded="true" />
+                <element signature="e#574#993#0" expanded="false" />
+                <element signature="e#1009#1497#0" expanded="false" />
+                <element signature="e#1553#1766#1" expanded="false" />
+                <element signature="e#1776#1933#0" expanded="false" />
+                <element signature="e#1943#2264#0" expanded="false" />
+                <element signature="e#2274#2367#0" expanded="false" />
+                <element signature="e#2377#2736#0" expanded="false" />
+                <element signature="e#2746#3282#0" expanded="false" />
+                <element signature="e#3292#3974#0" expanded="false" />
+                <element signature="e#3984#4262#0" expanded="false" />
+                <element signature="e#4272#4780#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,17 +166,18 @@
         <option value="$PROJECT_DIR$/src/recognizer/segment/core_func.cpp" />
         <option value="$PROJECT_DIR$/src/recognizer/segment/core_func.h" />
         <option value="$PROJECT_DIR$/Hyperlpr/io/linux_dir.h" />
-        <option value="$PROJECT_DIR$/Hyperlpr/util/operate.h" />
         <option value="$PROJECT_DIR$/Hyperlpr/util/config.h" />
         <option value="$PROJECT_DIR$/Hyperlpr/composer.h" />
-        <option value="$PROJECT_DIR$/Hyperlpr/plate/plate.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Hyperlpr/hyperlpr.h" />
-        <option value="$PROJECT_DIR$/Hyperlpr/recognizer/recongizer.h" />
-        <option value="$PROJECT_DIR$/Hyperlpr/recognizer/chinese/CN_PLATE.h" />
         <option value="$PROJECT_DIR$/Hyperlpr/judger/judger.h" />
-        <option value="$PROJECT_DIR$/examples/main.cpp" />
         <option value="$PROJECT_DIR$/Hyperlpr/locator/searcher.h" />
+        <option value="$PROJECT_DIR$/Hyperlpr/recognizer/chinese/CN_PLATE.h" />
+        <option value="$PROJECT_DIR$/Hyperlpr/plate/plate.h" />
+        <option value="$PROJECT_DIR$/Hyperlpr/recognizer/segment/chars_segment.cpp" />
+        <option value="$PROJECT_DIR$/Hyperlpr/recognizer/recongizer.h" />
+        <option value="$PROJECT_DIR$/examples/main.cpp" />
+        <option value="$PROJECT_DIR$/Hyperlpr/hyperlpr.h" />
+        <option value="$PROJECT_DIR$/Hyperlpr/util/operate.h" />
       </list>
     </option>
   </component>
@@ -176,7 +187,6 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="835" />
@@ -234,25 +244,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hyperlpr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HyperLPR" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HyperLPR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hyperlpr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="locator" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,16 +317,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="23" width="1440" height="835" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="835" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25069445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.62708336" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20234987" sideWeight="0.45833334" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.475" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5125" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20234987" sideWeight="0.44444445" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5763889" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.49722221" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.525" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.4236111" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -366,18 +358,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/locator/searcher.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="365" column="0" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hyperlpr/plate/plate.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -385,7 +370,7 @@
           <folding>
             <element signature="e#2164#2220#0" expanded="true" />
             <element signature="e#2394#2442#0" expanded="true" />
-            <marker date="1466989732000" expanded="true" signature="11186:11234" placeholder="..." />
+            <marker date="1467906453000" expanded="true" signature="11206:11254" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -408,9 +393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-          <folding>
-            <element signature="e#125#149#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -440,8 +422,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
-            <element signature="e#130#149#0" expanded="true" />
-            <element signature="e#6547#6980#0" expanded="true" />
+            <element signature="e#1101#1122#0" expanded="true" />
+            <element signature="e#1333#1345#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -467,7 +449,7 @@
           <folding>
             <element signature="e#2164#2220#0" expanded="true" />
             <element signature="e#2394#2442#0" expanded="true" />
-            <marker date="1466989732000" expanded="true" signature="11186:11234" placeholder="..." />
+            <marker date="1467906453000" expanded="true" signature="11206:11254" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -490,9 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding>
-            <element signature="e#125#149#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,8 +508,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#130#149#0" expanded="true" />
-            <element signature="e#6547#6980#0" expanded="true" />
+            <element signature="e#1101#1122#0" expanded="true" />
+            <element signature="e#1333#1345#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -588,9 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#125#149#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,24 +626,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/segment/chars_segment.cpp">
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/locator/locator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/composer.h">
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/segment/core_func.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/util/config.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -675,6 +645,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/chinese/CN_PLATE.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding>
+            <element signature="e#157#176#0" expanded="true" />
+            <element signature="e#1833#1884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/judger/judger.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="152" column="9" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -687,95 +676,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/util/operate.h">
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/segment/chars_segment.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/segment/core_func.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/recongizer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="13" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
-          <folding>
-            <element signature="e#130#149#0" expanded="true" />
-            <element signature="e#6547#6980#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/chinese/CN_PLATE.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="134" column="52" selection-start-line="134" selection-start-column="52" selection-end-line="134" selection-end-column="52" />
-          <folding>
-            <element signature="e#157#176#0" expanded="true" />
-            <element signature="e#1833#1884#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/hyperlpr.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="78" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="78" />
-          <folding>
-            <element signature="e#125#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/plate/plate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="18" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
-          <folding>
-            <element signature="e#2164#2220#0" expanded="true" />
-            <element signature="e#2394#2442#0" expanded="true" />
-            <marker date="1466989732000" expanded="true" signature="11186:11234" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/judger/judger.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="168" column="42" selection-start-line="168" selection-start-column="42" selection-end-line="168" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hyperlpr/locator/locator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <caret line="220" column="0" selection-start-line="220" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hyperlpr/locator/searcher.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41358024">
-          <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="348" column="46" selection-start-line="348" selection-start-column="46" selection-end-line="348" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/enhancement/retinex/retinex.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/plate/plate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <element signature="e#2164#2220#0" expanded="true" />
+            <element signature="e#2394#2442#0" expanded="true" />
+            <marker date="1467906453000" expanded="true" signature="11206:11254" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/util/config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/hyperlpr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="142" selection-start-line="56" selection-start-column="142" selection-end-line="56" selection-end-column="142" />
+          <folding>
+            <element signature="e#125#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/recognizer/recongizer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#1101#1122#0" expanded="true" />
+            <element signature="e#1333#1345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/composer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hyperlpr/util/operate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66049385">
+          <caret line="226" column="49" selection-start-line="226" selection-start-column="49" selection-end-line="226" selection-end-column="49" />
+          <folding>
+            <element signature="e#121#150#0" expanded="true" />
+            <element signature="e#574#993#0" expanded="false" />
+            <element signature="e#1009#1497#0" expanded="false" />
+            <element signature="e#1553#1766#1" expanded="false" />
+            <element signature="e#1776#1933#0" expanded="false" />
+            <element signature="e#1943#2264#0" expanded="false" />
+            <element signature="e#2274#2367#0" expanded="false" />
+            <element signature="e#2377#2736#0" expanded="false" />
+            <element signature="e#2746#3282#0" expanded="false" />
+            <element signature="e#3292#3974#0" expanded="false" />
+            <element signature="e#3984#4262#0" expanded="false" />
+            <element signature="e#4272#4780#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -224,6 +224,11 @@ namespace LPR {
 
 
         }
+        inline void drawPlate(Mat &img,Rect rect)
+        {
+            rectangle(img,rect,Scalar(255,255,0),2,CV_AA);
+
+        }
 
         template<typename T> inline float getBetDis(T p1, T p2) {
             return sqrt((p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y));

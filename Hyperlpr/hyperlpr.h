@@ -9,6 +9,7 @@
 
 
 #include "util/config.h"
+#include "util/operate.h"
 #include "locator/searcher.h"
 
 //车牌类
@@ -50,7 +51,17 @@ namespace LPR{
                 for(int i = 0 ; i<plates_ided.size();i++)
                 {
                     plates_name.push_back(plates_ided[i].PlateName);
+#define DEBUG
+#ifdef DEBUG
+                    Operate::drawPlate(load_image,plates_ided[i]._location);
+                    putText(load_image,plates_ided[i].PlateName,Point(plates_ided[i]._location.x,plates_ided[i]._location.y-2),0,0.5,Scalar(75,100,255));
+#endif
+
+                    cout<<plates_ided[i].PlateName<<endl;
                 }
+                imshow("debug",load_image);
+                waitKey(0);
+
                 return plates_name;
 
 
