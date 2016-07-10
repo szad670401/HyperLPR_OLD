@@ -16,7 +16,7 @@
 
 #define PLATE_DOWN_W 32
 #define PLATE_DOWN_H 9
-#define DEBUG_PA
+//#define DEBUG_PA
 //#define DEBUG
 
 #define ABS(T) ((((T>0)*2)-1)*T)
@@ -169,8 +169,6 @@ namespace LPR {
         Point minLoc;
         Point maxLoc;
         minMaxLoc(samMap,&minVal,&maxVal,&minLoc,&maxLoc);
-        cout<<maxLoc.y<<endl;
-
         return (maxLoc.y-16)*unit;
 
 
@@ -181,7 +179,7 @@ namespace LPR {
 
 
         threshold(plot, samMap, 140, 255, CV_THRESH_BINARY);
-        DEBUG_SHOW("sampleing_map_thres",samMap);
+        //DEBUG_SHOW("sampleing_map_thres",samMap);
         double _max_count = 0;
         double _recor_angle_ = 0;
 
@@ -212,7 +210,7 @@ namespace LPR {
                 _max_count = _count_exist;
                 _recor_angle_ = (_rows_peak - 16) * unit ;
 
-                cout<<"_rows_peak:"<<_rows_peak<<endl;
+              //  cout<<"_rows_peak:"<<_rows_peak<<endl;
 
             };
         }
@@ -319,7 +317,7 @@ namespace LPR {
         //minmax()
         //     computeRandonPlotAngle_m2(sampleing_map_thres,Pi_o_48);
 
-        return computeRandonPlotAngle_m2(sampleing_map_thres,Pi_o_48);
+        return computeRandonPlotAngle_m1(sampleing_map_thres,Pi_o_48);
 
 
 
@@ -401,9 +399,6 @@ namespace LPR {
 
 
         auto angle_cor = computeCorrectionAngle_randon(load_img);
-
-        cout<<angle_cor<<endl;
-
         const int padding = 5;
         Point2f _distorted[3] = {
                 Point2f(0 - _result_RBG.rows * (tan(angle_cor)) *

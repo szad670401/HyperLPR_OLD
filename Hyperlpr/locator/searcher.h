@@ -13,7 +13,7 @@
 #define DRAWCONTOUR(dst,contours,idx) drawContours( dst, contours, idx, Scalar(255,255,255), CV_FILLED, 8);
 #define MIN_PLATE_AREA 1000
 #define DEBUG
-#define DEBUG_PA
+//#define DEBUG_PA
 #define DEBUG_SHOW(name,img) imshow(name,img),waitKey(0);
 
 namespace LPR {
@@ -321,7 +321,7 @@ namespace LPR {
                 morphologyEx(sub_mat_rgb_c, thres_blue, CV_MOP_CLOSE, elemet);
                 emphasisLiVerticalEdge(thres_blue,20);
                 weakenHorizonEdge(thres_blue);
-                //  DEBUG imshow("thres_blue",thres_blue);
+                  //DEBUG imshow("thres_blue",thres_blue);
                 //  DEBUG imshow("thres_blue",thres_blue);
 
                 //cvtColor(thres_blue,thres_blue,CV_GRAY2BGR);
@@ -337,9 +337,9 @@ namespace LPR {
                     //for each contours of BoundingRect which of the first scaned.
                     Mat single_contour(sub_mat_rgb.rows, sub_mat_rgb.cols, CV_8UC1);
                     single_contour.setTo(0);
+                    auto area = contourArea(contours_bounding[c]);
 
-
-                    if(contourArea(contours_bounding[c])> 500) {
+                    if(area > 1000) {
 
                         DRAWCONTOUR(single_contour, contours_bounding, c);
 
@@ -455,8 +455,8 @@ namespace LPR {
 
                     //  DRAWCONTOUR(_sub_boungding_mat_mask,contours,i);
 
-//                  DEBUG imshow("_sub_boungding_mat_mask",_sub_bounding_mat_rgb);
-//                  DEBUG imshow("_sub_boungding_mat_rgb",_sub_bounding_mat_mask);
+                  //DEBUG imshow("_sub_boungding_mat_mask",_sub_bounding_mat_rgb);
+                  //DEBUG imshow("_sub_boungding_mat_rgb",_sub_bounding_mat_mask);
 //                  DEBUG waitKey(0);
 //                    //交给下个尺度
 

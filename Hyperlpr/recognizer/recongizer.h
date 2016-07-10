@@ -73,12 +73,13 @@ private:
 #define ReLu relu
         // construct nets
 
-        nn << convolutional_layer<ReLu>(20, 20, 3 , 1, 20) // 32x32 in, 5x5 kernel, 1-6 fmaps conv
-        << max_pooling_layer<ReLu>(18,18, 20, 2)
-        <<convolutional_layer<ReLu>(9,9, 2 , 20, 10)
-        <<fully_connected_layer<ReLu>(8*8*10,256)
-        <<fully_connected_layer<ReLu>(256, 100)
-        <<fully_connected_layer<softmax>(100, 65);
+        nn << convolutional_layer<ReLu>(20, 20, 3 , 1, 15) // 32x32 in, 5x5 kernel, 1-6 fmaps conv
+        << max_pooling_layer<ReLu>(18,18, 15, 2)
+        <<convolutional_layer<ReLu>(9,9, 2 , 15, 10)
+        <<fully_connected_layer<ReLu>(8*8*10,328)
+        <<fully_connected_layer<ReLu>(328, 256)
+        <<fully_connected_layer<softmax>(256, 65);
+
 //        nn << convolutional_layer<ReLu>(20, 20, 3 , 1, 20) // 32x32 in, 5x5 kernel, 1-6 fmaps conv
 //        << max_pooling_layer<ReLu>(18,18, 20, 2)
 //        <<convolutional_layer<ReLu>(9,9, 2 , 20, 10)
@@ -101,7 +102,7 @@ public:
         // load nets
         ifstream ifs(filename_model.c_str());
         if(ifs.good())
-            cout<<"opened"<<endl;
+            cout<<"classfier loaded."<<endl;
 
         ifs >> nn;
 
@@ -143,7 +144,7 @@ public:
 
         for(int i = lo ; i < hi;i++)
         {
-            cout<<"["<<i<<"] "<<vec[i]<<endl;
+          //  cout<<"["<<i<<"] "<<vec[i]<<endl;
 
           if(vec[i] > f) {
               f = vec[i];
@@ -186,7 +187,7 @@ public:
             range.first = -1;
             range.second = -1;
             recongize(size_img,result_scores_test,va,range,65);
-            cout<<findmax(result_scores_test);
+           // cout<<findmax(result_scores_test);
 #endif
 
             //   recongize(size_img,result_scores);

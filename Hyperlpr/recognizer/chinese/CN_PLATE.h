@@ -151,8 +151,8 @@ public:
 
             //cout<<chartable[recongizer1.findmax(result_scores_test)]<<endl;
         ostringstream os;
-        os<<"img:"<<i;
-        imshow(os.str(),matChars[i]);
+       // os<<"img:"<<i;
+       // imshow(os.str(),matChars[i]);
 #endif
 
 

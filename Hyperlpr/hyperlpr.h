@@ -24,8 +24,8 @@ using cv::Mat;
 
 namespace LPR{
     const string test_path_judger = "/Users/yujinke/Desktop/platejudge.data";
-    const string test_path_regonzier = "/Users/yujinke/Desktop/LeNet-weights";
-
+//    const string test_path_regonzier = "/Users/yujinke/Desktop/LeNet-weights";
+    const string test_path_regonzier = "/Users/yujinke/Documents/tiny-cnn/data/LeNet-weights";
         class HyperLPR {
 
         public:
@@ -59,8 +59,8 @@ namespace LPR{
 
                     cout<<plates_ided[i].PlateName<<endl;
                 }
-                imshow("debug",load_image);
-                waitKey(0);
+//                imshow("debug",load_image);
+//                waitKey(0);
 
                 return plates_name;
 
@@ -71,18 +71,31 @@ namespace LPR{
             // 加载图片进行识别. 识别后输出车牌属性
 
             vector<_Plate> PR_existent_as_PLATE(Mat prePr_img) {
+#define DEBUG_PERF
+#ifdef DEBUG_PERF
+               auto test_break = getCurrentTime();
+
+#endif
+
                 vector<_Plate> plates_ided;
                 vector<_CandidatePlate> plates;
                 LPR::Plate_Search::Searching_plates(prePr_img, plates, 1);
-
+                cout<<"time-consuming-locate/per image:"<<getCurrentTime()-test_break<<"ms"<<endl;
                 for(int i = 0; i < plates.size();i++ ){
                     _CandidatePlate inv =  plates[i];
                     inv.doJudge(platejudger);
                     inv.doRecongize(recognizer);
+
+                    //DEBUG waitKey(0);
+
                     if(inv.isPlate)
                         plates_ided.push_back(inv);
 
                 }
+#ifdef DEBUG_PERF
+               cout<<"time-consuming-full/per image:"<<getCurrentTime()-test_break<<"ms"<<endl;
+
+#endif
                 return plates_ided;
 
 

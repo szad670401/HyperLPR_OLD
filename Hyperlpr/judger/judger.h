@@ -72,7 +72,6 @@ private:
 
         cv::resize(img, resized, cv::Size(w, h));
         // mnist dataset is "white on black", so negate required
-        cout<<"s"<<endl;
         std::transform(resized.begin(), resized.end(), std::back_inserter(data),
                        [=](uint8_t c) { return (255 - c) * (maxv - minv) / 255.0 + minv; });
     }
@@ -100,12 +99,9 @@ public:
 
         float lw_ratio =  float(PLATE_W)/PLATE_H;
 
-        cout<<"lw_ratio:"<<lw_ratio<<endl;
-
         cv::Point2f center(INPUT_SIZE/2,INPUT_SIZE/2);
 
         auto t_h_half = (INPUT_SIZE/lw_ratio)/2;
-        cout<<"t_w_half:"<<t_h_half<<endl;
 
 
         auto t_w_half = (INPUT_SIZE/2);
@@ -170,9 +166,6 @@ public:
         if(res.size()!=2) throw("Error: Scores.size()!=2 [ in judge model function: judge(cv:Mat img) ]");
         float pre_0  = rescale<softmax>(res[0]);
         float pre_1 =  rescale<softmax>(res[1]);
-        cout<<"pre_0:"<<pre_0<<endl;
-        cout<<"pre_1:"<<pre_1<<endl;
-
         if(pre_0>=pre_1) return 1;
         return 0;
 
