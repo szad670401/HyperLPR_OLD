@@ -65,7 +65,6 @@ private:
         if (img.data == nullptr) return; // cannot open, or it's not an image
         cv::Mat_<uint8_t> resized;
         cv::resize(img, resized, cv::Size(w, h));
-        imshow("post",img);
         // mnist dataset is "white on black", so negate required
         std::transform(resized.begin(), resized.end(), std::back_inserter(data),
                        [=](uint8_t c) { return (255 - c) * (maxv - minv) / 255.0 + minv; });
@@ -126,15 +125,14 @@ public:
 
 
     string findmax(vector<double> vec,int lo = 0,int hi = 65){
-        double f = 0;
+        double f = -1;
         int idx = -1;
 
 
         for(int i = lo ; i < hi;i++)
         {
            // cout<<"["<<chars[i]<<"]:"<<vec[i]<<endl;
-
-            //  cout<<"["<<i<<"] "<<vec[i]<<endl;
+            //cout<<"["<<i<<"] "<<vec[i]<<endl;
 
             if(vec[i] > f) {
                 f = vec[i];
@@ -142,6 +140,9 @@ public:
 
             }
         }
+
+//        cout<<"id:"<<idx<<"char:"<<chars[idx]<<endl;
+
         return chars[idx];
 
     }
@@ -209,8 +210,9 @@ public:
         vector<double>  results;
 
         for (int i = 0; i < 65; i++) {
-            float conf_val = rescale<softmax>(res[i]);
-            results.emplace_back(conf_val/120);
+           // float conf_val = rescale<softmax>(res[i]);
+            float conf_val = rescale<tan_h>(res[i]);
+            results.emplace_back(conf_val);
         }
         pair<int,int> range;
 

@@ -132,7 +132,7 @@ namespace LPR {
             auto prepared  =  _Plate::RGB;
             _Plate::PlateName = CN_recognizer::recongize(prepared,which,whichAssit);
 
-#define DEBUG_RECONGIZE
+//#define DEBUG_RECONGIZE
 #ifdef DEBUG_RECONGIZE
             imshow("re_recongize",prepared);
             waitKey(0);
