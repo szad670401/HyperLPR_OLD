@@ -4,7 +4,6 @@
 #include "../Hyperlpr/hyperlpr.h"
 #include "../Hyperlpr/io/linux_dir.h"
 
-
 #ifndef HYPERLPR_EVALUATE_H
 #define HYPERLPR_EVALUATE_H
 
@@ -25,15 +24,58 @@ int stringdiff(char* A,char* B)
     int matched = 0 ;
     auto len_A = len(A);
     auto len_B = len(B);
-    for(int i = 0; i<6;i++)
+    for(int i = 0; i<8;i++)
     {
-
         if (A[len_A-i] != B[len_B-i])
             matched++;
     }
+
     return matched;
 
 }
+//
+//void eval_recongize(){
+//    Directory_mac dir;
+//    int start_time = getCurrentTime();
+//
+//    vector<string> filename = dir.GetListFiles("/Users/yujinke/Downloads/labeled", "*.jpg");
+//    CN_PLATE_recognizer *recognizer = new CN_PLATE_recognizer( "/Users/yujinke/Documents/tiny-cnn/data/bak1/LeNet-weights 52.67% 3 2 2 2");
+//    int count=  0;
+//
+//    for (int i = 0; i < filename.size(); i++) {
+//        if (filename[i].find(".jpg") < INT32_MAX) {
+//            Mat img = imread(filename[i]);
+//
+//            string res = recognizer->recongize(img);
+//            cout<<res<<endl;
+//            //imwrite("/Users/yujinke/Desktop/labeled/"+res+".jpg",img);
+//            char* pos_dst =(char*)filename[i].data();
+//            char* pos_res = (char*)(res+".").data();
+//            int diff = stringdiff(pos_dst,pos_res);
+//            if(diff == 0 )
+//            {
+//                count++;
+//            }
+////            cout<<pos_dst<<endl;
+////            cout<<pos_res<<endl;
+////
+////
+////            imshow("img", img);
+////            waitKey(0);
+//        }
+//
+//    }
+//
+//    int time_consuming =getCurrentTime() -  start_time;
+//    cout<<"耗时:"<<time_consuming/1000.0<<"s"<<endl;
+//    cout<<"平均耗时:"<<time_consuming/float(filename.size())<<"ms"<<endl;
+//    cout<<"一共"<<filename.size()<<"张"<<endl;
+//    cout<<"完全识别出"<<count<<"张"<<endl;
+//    cout<<"识别率:"<<(float(count)/filename.size())*100<<"%"<<endl;
+//
+//}
+
+
 
 void evaluate() {
 
@@ -45,7 +87,10 @@ void evaluate() {
     ///vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/extreme_test/逆光", "*.jpg");
 
 //vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/test_home", "*.png");
-    vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/general_test", "*.JPG");
+   // vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/general_test", "*.JPG");
+    vector<string> filename = dir.GetListFiles("/Users/yujinke/Downloads/label", "*.JPG");
+
+  //  vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/undetectedplate/", "*.JPG");
 
     //vector<string> filename = dir.GetListFiles("/Users/yujinke/ClionProjects/Quick_LPR/home/", "*.JPG");
     int start_time = getCurrentTime();
@@ -74,10 +119,16 @@ void evaluate() {
                     Num_correct_flag=1;
                 }
 
-                if(diff<=6 &&!Num_located_flag) {
+                if(!Num_located_flag) {
                     Num_located++;
                     Num_located_flag=1;
                 }
+            }
+            if(!Num_located_flag)
+            {
+                string path = "/Users/yujinke/Desktop/undetectedplate/";
+              //  imwrite(path + Operate::getMatId(img) + ".jpg", img);
+                Num_located_flag = 1;
             }
         }
         //cout<<"识别成功的车牌数目:"<<Num_correct<<endl;

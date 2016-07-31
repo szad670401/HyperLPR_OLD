@@ -142,7 +142,7 @@ public:
 
         for (int i = 0; i < 2; i++) {
             float conf_val = rescale<softmax>(res[i]);
-            results.emplace_back(conf_val/100);
+            results.emplace_back(conf_val);
         }
 
     }

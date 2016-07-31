@@ -14,8 +14,9 @@
 #define PLATE_W 136
 #define PLATE_H 36
 
-#define PLATE_DOWN_W 32
-#define PLATE_DOWN_H 9
+#define PLATE_DOWN_W 51
+#define PLATE_DOWN_H 14
+
 //#define DEBUG_PA
 //#define DEBUG
 
@@ -25,8 +26,7 @@ using namespace std;
 
 namespace LPR {
 
-    class _Plate {
-    public:
+    class _Plate {    public:
         _Plate(){
 
         }
@@ -98,7 +98,7 @@ namespace LPR {
 
         float computeCorrectionAngle_contour(Mat img);
 
-        void doRecongize(CN_PLATE_recognizer *which);
+        void doRecongize(charRecognizer *which,charRecognizer *whichAssit);
 
         void doJudge(judger *which);
 
@@ -125,18 +125,17 @@ namespace LPR {
 
 
     };
-    void _CandidatePlate::doRecongize(CN_PLATE_recognizer *which)
+    void _CandidatePlate::doRecongize(charRecognizer *which,charRecognizer *whichAssit)
     {
         if(isPlate)
         {
             auto prepared  =  _Plate::RGB;
-            _Plate::PlateName =  which->recongize(prepared);
-//#define DEBUG_RECONGIZE
+            _Plate::PlateName = CN_recognizer::recongize(prepared,which,whichAssit);
+
+#define DEBUG_RECONGIZE
 #ifdef DEBUG_RECONGIZE
             imshow("re_recongize",prepared);
             waitKey(0);
-
-
 #endif
 
         }
@@ -152,6 +151,7 @@ namespace LPR {
 
         if(which->judge(prepared)) {
             isPlate = 1;
+
         }
 
     }
@@ -248,7 +248,7 @@ namespace LPR {
         Mat sampleing_map(32, cols, CV_32F);
         sampleing_map.setTo(0);
         //adaptiveThreshold(plateImg, thres_plate, 255, CV_ADAPTIVE_THRESH_MEAN_C, CV_THRESH_BINARY, 21, 1);
-        threshold(load_img, thres_plate, 180, 255, CV_THRESH_BINARY);
+        threshold(load_img, thres_plate, 160, 255, CV_THRESH_BINARY);
 
 
         //阈值操作
@@ -423,9 +423,9 @@ namespace LPR {
         DEBUG cout<<"correctPlate Distort Correct"<<c_t_4-c_t_3<<"ms"<<endl;
 #endif
 
-#ifdef DEBUG
 
-        //  DEBUG_SHOW("corrent_mat_GUESS",corrent_mat);
+#ifdef DEBUG
+    //   DEBUG_SHOW("corrent_mat",corrent_mat);
 #endif
         corrent_mat.copyTo(_Plate::RGB);
 

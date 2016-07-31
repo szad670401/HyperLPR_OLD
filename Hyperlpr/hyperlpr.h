@@ -11,7 +11,9 @@
 #include "util/config.h"
 #include "util/operate.h"
 #include "locator/searcher.h"
-
+#include "./recognizer/chinese/cnn_recognizer.h"
+//#include "./recognizer/chinese/tesseract_recognizer.h"
+//#include "./CN_PLATE.h"
 //车牌类
 #define PLATE
 //配置表
@@ -24,8 +26,11 @@ using cv::Mat;
 
 namespace LPR{
     const string test_path_judger = "/Users/yujinke/Desktop/platejudge.data";
-//    const string test_path_regonzier = "/Users/yujinke/Desktop/LeNet-weights";
-    const string test_path_regonzier = "/Users/yujinke/Documents/tiny-cnn/data/LeNet-weights";
+   const string test_path_regonzier = "/Users/yujinke/Desktop/LeNet-weights";
+ //   const string test_path_regonzier = "/Users/yujinke/Documents/tiny-cnn/data/LeNet-weights";
+    //const string test_path_regonzier = "/Users/yujinke/Documents/tiny-cnn/data/bak1/LeNet-weights 52.67% 3 2 2 2";
+    const string test_path_tesseract = "/usr/local/Cellar/tesseract/3.04.00/share/tessdata";
+
         class HyperLPR {
 
         public:
@@ -36,7 +41,10 @@ namespace LPR{
 //
 //            }
             HyperLPR(){
-                recognizer = new CN_PLATE_recognizer(test_path_regonzier);
+              //  recognizer_tess = new recogizer_tesseract(test_path_regonzier);
+                recognizer_CNN = new recognizer_cnn(test_path_regonzier);
+
+
                 platejudger = new judger(test_path_judger);
 
 
@@ -59,8 +67,8 @@ namespace LPR{
 
                     cout<<plates_ided[i].PlateName<<endl;
                 }
-//                imshow("debug",load_image);
-//                waitKey(0);
+
+//
 
                 return plates_name;
 
@@ -84,7 +92,7 @@ namespace LPR{
                 for(int i = 0; i < plates.size();i++ ){
                     _CandidatePlate inv =  plates[i];
                     inv.doJudge(platejudger);
-                    inv.doRecongize(recognizer);
+                    inv.doRecongize(recognizer_CNN,recognizer_CNN);
 
                     //DEBUG waitKey(0);
 
@@ -102,14 +110,19 @@ namespace LPR{
             }
 
             ~HyperLPR(){
-                delete recognizer;
+                delete recognizer_tess;
+                delete  recognizer_CNN;
+
                 delete platejudger;
 
 
             }
         protected:
           //  LPR::CONFIG::Config CONFIG_LIST_PR; //默认配置表
-            CN_PLATE_recognizer *recognizer;
+            charRecognizer *recognizer_tess = nullptr;
+            charRecognizer *recognizer_CNN = nullptr;
+
+
             judger *platejudger;
 
 

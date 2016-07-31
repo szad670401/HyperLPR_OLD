@@ -319,7 +319,14 @@ namespace LPR {
                 threshold(sub_mat_rgb_c, sub_mat_rgb_c, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
                 Mat elemet = getStructuringElement(MORPH_RECT, Size(8, 2));
                 morphologyEx(sub_mat_rgb_c, thres_blue, CV_MOP_CLOSE, elemet);
-                emphasisLiVerticalEdge(thres_blue,20);
+                emphasisLiVerticalEdge(thres_blue,18);
+                //8:20:67%
+                //8:18:70.2%
+                //8:16:71.2%
+                //8:14:69.2%
+                //8:10:57
+
+
                 weakenHorizonEdge(thres_blue);
                   //DEBUG imshow("thres_blue",thres_blue);
                 //  DEBUG imshow("thres_blue",thres_blue);
@@ -386,20 +393,20 @@ namespace LPR {
             blur(greyImg_level_2, greyImg_level_2, Size(3, 3));
 
             Sobel(greyImg_level_2, greyImg_level_2, CV_8U, 2, 0, 3, 1, 0);
-            cout<<greyImg_level_2.dims<<endl;
             //Rect_threshold(greyImg_level_2,10,16);
             threshold(greyImg_level_2, thresImg_level_2, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
 
             Mat elemet = getStructuringElement(MORPH_RECT, Size(9, 2));
 
 
-            //    DEBUG_SHOW("greyImg_level_2",greyImg_level_2);
+            //DEBUG_SHOW("greyImg_level_2",thresImg_level_2);
 
 
 
             morphologyEx(thresImg_level_2, thresImg_level_2, CV_MOP_CLOSE, elemet);
-            //EmphasisLiVerticalEdge(thresImg_level_2,10);
+            emphasisLiVerticalEdge(thresImg_level_2,10);
 
+       //     DEBUG_SHOW("greyImg_level_2",thresImg_level_2);
 
             Mat tofindcontours,tofindcontours_level_2,thres_image_bak;
 
