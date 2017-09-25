@@ -329,7 +329,8 @@ namespace LPR {
 
                 weakenHorizonEdge(thres_blue);
                   //DEBUG imshow("thres_blue",thres_blue);
-                //  DEBUG imshow("thres_blue",thres_blue);
+//                  DEBUG imshow("thres_blue",thres_blue);
+//                    cv::waitKey(0);
 
                 //cvtColor(thres_blue,thres_blue,CV_GRAY2BGR);
                 //Mat and_thres_blue;
@@ -354,14 +355,13 @@ namespace LPR {
                         //single_contour为 掩膜图像
                         //sub_mat_rgb 为 RGB 图像
                         _CandidatePlate candidate_Plate(sub_mat_rgb,single_contour,rot_rect.boundingRect());
-                        candidate_Plate.correctPlate();
+                        //candidate_Plate.correctPlate();
 
                         plates.push_back(candidate_Plate);
 
 
 #ifdef DEBUG_PA
                         DEBUG auto c_t = getCurrentTime();
-
 #endif
 
 #ifdef DEBUG_PA

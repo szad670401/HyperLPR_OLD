@@ -89,17 +89,23 @@ namespace LPR{
                 vector<_CandidatePlate> plates;
                 LPR::Plate_Search::Searching_plates(prePr_img, plates, 1);
                 cout<<"time-consuming-locate/per image:"<<getCurrentTime()-test_break<<"ms"<<endl;
+
                 for(int i = 0; i < plates.size();i++ ){
                     _CandidatePlate inv =  plates[i];
+                    cout<<"judge"<<endl;
                     inv.doJudge(platejudger);
+                    cout<<"recognize"<<endl;
                     inv.doRecongize(recognizer_CNN,recognizer_CNN);
-
-                    //DEBUG waitKey(0);
 
                     if(inv.isPlate)
                         plates_ided.push_back(inv);
 
                 }
+
+               // imshow("plate",prePr_img);
+
+                // DEBUG waitKey(0);
+
 #ifdef DEBUG_PERF
                cout<<"time-consuming-full/per image:"<<getCurrentTime()-test_break<<"ms"<<endl;
 

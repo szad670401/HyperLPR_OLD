@@ -25,7 +25,7 @@ set(PROJECT_SOURCE_DIR ./Hyperlpr)
 find_package(OPENCV REQUIRED)
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR} )
 LINK_LIBRARIES(${REQUIRED_LIBRARIES}  ${TESSERACT_LIB})
-set(TEST_FILES ${SOURCE_FILES} examples/main.cpp )
+set(TEST_FILES ${SOURCE_FILES} examples/main.cpp examples/test_locate.h)
 add_executable(HyperLPR  ${TEST_FILES})
 include_directories(${OpenCV_INCLUDE_DIRS} ${TESSERACT_INCLUDE})
 

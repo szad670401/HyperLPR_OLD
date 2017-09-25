@@ -10,7 +10,7 @@
 using namespace easypr;
 namespace CN_recognizer{
 
-    const int INPUT_SIZE = 23;
+    const int INPUT_SIZE = 20;
 
     inline cv::Mat extendImage(cv::Mat img) {
 

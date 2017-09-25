@@ -86,9 +86,9 @@ void evaluate() {
     //vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/extreme_test/大角度", "*.jpg");
     ///vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/extreme_test/逆光", "*.jpg");
 
-//vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/test_home", "*.png");
-   // vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/general_test", "*.JPG");
-    vector<string> filename = dir.GetListFiles("/Users/yujinke/Downloads/label", "*.JPG");
+// vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/test_home", "*.png");
+  //  vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/EasyPR/resources/image/general_test", "*.JPG");
+ vector<string> filename = dir.GetListFiles("/Users/yujinke/Downloads/label", "*.JPG");
 
   //  vector<string> filename = dir.GetListFiles("/Users/yujinke/Desktop/undetectedplate/", "*.JPG");
 

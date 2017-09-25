@@ -83,6 +83,7 @@ namespace LPR {
             //input 必须为 24BIT
             //_mask 必须为 8bit
             _candidated  = candidated;
+            _candidated.copyTo(_Plate::RGB);
             mask_ = _mask;
             _location = location;
 
@@ -143,14 +144,20 @@ namespace LPR {
 
     void _CandidatePlate::doJudge(judger *which){
         auto prepared  =  _Plate::RGB;
-//#define DEBUG_RECONGIZE
-#ifdef DEBUG_RECONGIZE
-        imshow("prepared",prepared);
-        waitKey(0);
-#endif
+//        imshow("test",prepared);
+//        waitKey(0);
 
         if(which->judge(prepared)) {
             isPlate = 1;
+#define DEBUG_RECONGIZE
+#ifdef DEBUG_RECONGIZE
+            string id = Operate::getMatId(prepared);
+
+            imwrite("/Users/yujinke/me/HyperLPR/plate/"+id+".png",prepared);
+
+//            imshow("prepared",prepared);
+//            waitKey(0);
+#endif
 
         }
 
@@ -332,6 +339,7 @@ namespace LPR {
 #endif
 
         Mat preprocess_RGB =_candidated;
+        _candidated.copyTo(_Plate::RGB);
         Mat mask = mask_ ;/*Mask would be changed*/
         //!检测二值图像
         //旋转矩形
@@ -425,8 +433,9 @@ namespace LPR {
 
 
 #ifdef DEBUG
-    //   DEBUG_SHOW("corrent_mat",corrent_mat);
+    //
 #endif
+        //DEBUG_SHOW("corrent_mat",corrent_mat);
         corrent_mat.copyTo(_Plate::RGB);
 
         return corrent_mat;

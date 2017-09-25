@@ -75,18 +75,17 @@ private:
 #define ReLu relu
 
         // construct nets
-
-        nn << convolutional_layer<tan_h>(28, 28 ,5, 1, 6)  // C1, 1@32x32-in, 6@28x28-out
-        << average_pooling_layer<tan_h>(24, 24, 6, 2)   // S2, 6@28x28-in, 6@14x14-out
-        << convolutional_layer<tan_h>(12, 12, 5, 6, 16)
-        << average_pooling_layer<tan_h>(8, 8, 16, 2)  // S4, 16@10x10-in, 16@5x5-out
-        << convolutional_layer<tan_h>(4, 4, 4, 16, 120) // C5, 16@5x5-in, 120@1x1-out
-        << fully_connected_layer<tan_h>(120, 65);       // F6, 120-in, 10-out
+        nn << convolutional_layer<leaky_relu>(20, 20, 5, 1, 18)  // C1, 1@32x32-in, 6@28x28-out
+           << average_pooling_layer<leaky_relu>(16, 16, 18, 2)   // S2, 6@28x28-in, 6@14x14-out
+           << convolutional_layer<leaky_relu>(8, 8,  3, 18, 25)
+           << average_pooling_layer<leaky_relu>(6, 6, 25, 2)  // S4, 16@10x10-in, 16@5x5-out
+           << convolutional_layer<leaky_relu>(3, 3, 2, 25, 128)// 5, 16@5x5-in, 120@1x1-out
+           << fully_connected_layer<softmax>(128 * 2 * 2, 65);       // F6, 120-in, 10-out
     }
 
 public:
 
-#define CHAR_SIZE  28
+#define CHAR_SIZE  20
 
     recognizer_cnn(string filename_model)
     {
